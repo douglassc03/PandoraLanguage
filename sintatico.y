@@ -94,6 +94,7 @@ E 			: E '+' E
 			{
 				$$.label = gentempcode();
 				$$.traducao = "\t" + $$.label + " = " + $1.label + ";\n";
+				
 			}
 			;
 
