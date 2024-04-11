@@ -32,7 +32,7 @@ string gentempcode();
 
 S 			: TK_TIPO_INT TK_MAIN '(' ')' BLOCO
 			{
-				string codigo = "/*Compilador FOCA*/\n"
+				string codigo = "/*Compilador Pandora*/\n"
 								"#include <iostream>\n"
 								"#include<string.h>\n"
 								"#include<stdio.h>\n"
