@@ -24,7 +24,7 @@ ID {LETRA}({LETRA}|{NUM})*
 
 "int"		{ return TK_TIPO_INT; }
 "float"		{ return TK_TIPO_FLOAT; }
-"boolean"		{ return TK_TIPO_BOOLEAN; }
+"boolean"	{ return TK_TIPO_BOOLEAN; }
 "char"      { return TK_TIPO_CHAR; } 
 
 "True"      { return TK_TRUE; }

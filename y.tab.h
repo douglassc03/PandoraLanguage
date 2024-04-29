@@ -55,11 +55,26 @@ extern int yydebug;
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
     TK_NUM = 258,                  /* TK_NUM  */
-    TK_MAIN = 259,                 /* TK_MAIN  */
-    TK_ID = 260,                   /* TK_ID  */
-    TK_TIPO_INT = 261,             /* TK_TIPO_INT  */
-    TK_FIM = 262,                  /* TK_FIM  */
-    TK_ERROR = 263                 /* TK_ERROR  */
+    TK_REAL = 259,                 /* TK_REAL  */
+    TK_CHAR = 260,                 /* TK_CHAR  */
+    TK_MAIN = 261,                 /* TK_MAIN  */
+    TK_ID = 262,                   /* TK_ID  */
+    TK_TIPO_INT = 263,             /* TK_TIPO_INT  */
+    TK_TIPO_FLOAT = 264,           /* TK_TIPO_FLOAT  */
+    TK_TIPO_BOOLEAN = 265,         /* TK_TIPO_BOOLEAN  */
+    TK_TIPO_CHAR = 266,            /* TK_TIPO_CHAR  */
+    TK_TRUE = 267,                 /* TK_TRUE  */
+    TK_FALSE = 268,                /* TK_FALSE  */
+    TK_MAIOR_IGUAL = 269,          /* TK_MAIOR_IGUAL  */
+    TK_MENOR_IGUAL = 270,          /* TK_MENOR_IGUAL  */
+    TK_IGUAL_IGUAL = 271,          /* TK_IGUAL_IGUAL  */
+    TK_DIFERENTE = 272,            /* TK_DIFERENTE  */
+    TK_MAIS_MAIS = 273,            /* TK_MAIS_MAIS  */
+    TK_MENOS_MENOS = 274,          /* TK_MENOS_MENOS  */
+    TK_OU = 275,                   /* TK_OU  */
+    TK_E = 276,                    /* TK_E  */
+    TK_FIM = 277,                  /* TK_FIM  */
+    TK_ERROR = 278                 /* TK_ERROR  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -69,11 +84,26 @@ extern int yydebug;
 #define YYerror 256
 #define YYUNDEF 257
 #define TK_NUM 258
-#define TK_MAIN 259
-#define TK_ID 260
-#define TK_TIPO_INT 261
-#define TK_FIM 262
-#define TK_ERROR 263
+#define TK_REAL 259
+#define TK_CHAR 260
+#define TK_MAIN 261
+#define TK_ID 262
+#define TK_TIPO_INT 263
+#define TK_TIPO_FLOAT 264
+#define TK_TIPO_BOOLEAN 265
+#define TK_TIPO_CHAR 266
+#define TK_TRUE 267
+#define TK_FALSE 268
+#define TK_MAIOR_IGUAL 269
+#define TK_MENOR_IGUAL 270
+#define TK_IGUAL_IGUAL 271
+#define TK_DIFERENTE 272
+#define TK_MAIS_MAIS 273
+#define TK_MENOS_MENOS 274
+#define TK_OU 275
+#define TK_E 276
+#define TK_FIM 277
+#define TK_ERROR 278
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
