@@ -57,24 +57,41 @@ extern int yydebug;
     TK_NUM = 258,                  /* TK_NUM  */
     TK_REAL = 259,                 /* TK_REAL  */
     TK_CHAR = 260,                 /* TK_CHAR  */
-    TK_MAIN = 261,                 /* TK_MAIN  */
-    TK_ID = 262,                   /* TK_ID  */
-    TK_TIPO_INT = 263,             /* TK_TIPO_INT  */
-    TK_TIPO_FLOAT = 264,           /* TK_TIPO_FLOAT  */
-    TK_TIPO_BOOLEAN = 265,         /* TK_TIPO_BOOLEAN  */
-    TK_TIPO_CHAR = 266,            /* TK_TIPO_CHAR  */
-    TK_TRUE = 267,                 /* TK_TRUE  */
-    TK_FALSE = 268,                /* TK_FALSE  */
-    TK_MAIOR_IGUAL = 269,          /* TK_MAIOR_IGUAL  */
-    TK_MENOR_IGUAL = 270,          /* TK_MENOR_IGUAL  */
-    TK_IGUAL_IGUAL = 271,          /* TK_IGUAL_IGUAL  */
-    TK_DIFERENTE = 272,            /* TK_DIFERENTE  */
-    TK_MAIS_MAIS = 273,            /* TK_MAIS_MAIS  */
-    TK_MENOS_MENOS = 274,          /* TK_MENOS_MENOS  */
-    TK_OU = 275,                   /* TK_OU  */
-    TK_E = 276,                    /* TK_E  */
-    TK_FIM = 277,                  /* TK_FIM  */
-    TK_ERROR = 278                 /* TK_ERROR  */
+    TK_TRUE = 261,                 /* TK_TRUE  */
+    TK_FALSE = 262,                /* TK_FALSE  */
+    TK_STRING = 263,               /* TK_STRING  */
+    TK_VOID = 264,                 /* TK_VOID  */
+    TK_FUNCTION = 265,             /* TK_FUNCTION  */
+    TK_MAIN = 266,                 /* TK_MAIN  */
+    TK_ID = 267,                   /* TK_ID  */
+    TK_TIPO_INT = 268,             /* TK_TIPO_INT  */
+    TK_TIPO_FLOAT = 269,           /* TK_TIPO_FLOAT  */
+    TK_TIPO_CHAR = 270,            /* TK_TIPO_CHAR  */
+    TK_TIPO_BOOLEAN = 271,         /* TK_TIPO_BOOLEAN  */
+    TK_TIPO_STRING = 272,          /* TK_TIPO_STRING  */
+    TK_MAIOR_IGUAL = 273,          /* TK_MAIOR_IGUAL  */
+    TK_MENOR_IGUAL = 274,          /* TK_MENOR_IGUAL  */
+    TK_IGUAL_IGUAL = 275,          /* TK_IGUAL_IGUAL  */
+    TK_DIFERENTE = 276,            /* TK_DIFERENTE  */
+    TK_MAIS_MAIS = 277,            /* TK_MAIS_MAIS  */
+    TK_MENOS_MENOS = 278,          /* TK_MENOS_MENOS  */
+    TK_OU = 279,                   /* TK_OU  */
+    TK_E = 280,                    /* TK_E  */
+    TK_MAIS_IGUAL = 281,           /* TK_MAIS_IGUAL  */
+    TK_MENOS_IGUAL = 282,          /* TK_MENOS_IGUAL  */
+    TK_IF = 283,                   /* TK_IF  */
+    TK_ELSE = 284,                 /* TK_ELSE  */
+    TK_WHILE = 285,                /* TK_WHILE  */
+    TK_FOR = 286,                  /* TK_FOR  */
+    TK_DO = 287,                   /* TK_DO  */
+    TK_SWITCH = 288,               /* TK_SWITCH  */
+    TK_CASE = 289,                 /* TK_CASE  */
+    TK_BREAK = 290,                /* TK_BREAK  */
+    TK_CONTINUE = 291,             /* TK_CONTINUE  */
+    TK_PRINT = 292,                /* TK_PRINT  */
+    TK_SCAN = 293,                 /* TK_SCAN  */
+    TK_RETURN = 294,               /* TK_RETURN  */
+    TK_ERROR = 295                 /* TK_ERROR  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -86,24 +103,41 @@ extern int yydebug;
 #define TK_NUM 258
 #define TK_REAL 259
 #define TK_CHAR 260
-#define TK_MAIN 261
-#define TK_ID 262
-#define TK_TIPO_INT 263
-#define TK_TIPO_FLOAT 264
-#define TK_TIPO_BOOLEAN 265
-#define TK_TIPO_CHAR 266
-#define TK_TRUE 267
-#define TK_FALSE 268
-#define TK_MAIOR_IGUAL 269
-#define TK_MENOR_IGUAL 270
-#define TK_IGUAL_IGUAL 271
-#define TK_DIFERENTE 272
-#define TK_MAIS_MAIS 273
-#define TK_MENOS_MENOS 274
-#define TK_OU 275
-#define TK_E 276
-#define TK_FIM 277
-#define TK_ERROR 278
+#define TK_TRUE 261
+#define TK_FALSE 262
+#define TK_STRING 263
+#define TK_VOID 264
+#define TK_FUNCTION 265
+#define TK_MAIN 266
+#define TK_ID 267
+#define TK_TIPO_INT 268
+#define TK_TIPO_FLOAT 269
+#define TK_TIPO_CHAR 270
+#define TK_TIPO_BOOLEAN 271
+#define TK_TIPO_STRING 272
+#define TK_MAIOR_IGUAL 273
+#define TK_MENOR_IGUAL 274
+#define TK_IGUAL_IGUAL 275
+#define TK_DIFERENTE 276
+#define TK_MAIS_MAIS 277
+#define TK_MENOS_MENOS 278
+#define TK_OU 279
+#define TK_E 280
+#define TK_MAIS_IGUAL 281
+#define TK_MENOS_IGUAL 282
+#define TK_IF 283
+#define TK_ELSE 284
+#define TK_WHILE 285
+#define TK_FOR 286
+#define TK_DO 287
+#define TK_SWITCH 288
+#define TK_CASE 289
+#define TK_BREAK 290
+#define TK_CONTINUE 291
+#define TK_PRINT 292
+#define TK_SCAN 293
+#define TK_RETURN 294
+#define TK_ERROR 295
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED

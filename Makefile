@@ -1,28 +1,13 @@
-SCANNER := lex
-SCANNER_PARAMS := lexico.l
-PARSER := yacc
-PARSER_PARAMS := -d sintatico.y
-
-all: compile translate
-
-compile:
-		$(SCANNER) $(SCANNER_PARAMS)
-		$(PARSER) $(PARSER_PARAMS)
-		g++ -o glf y.tab.c -ll
-
-run: 	glf
+all: 	
 		clear
-		compile
-		translate
-
-debug:	PARSER_PARAMS += -Wcounterexamples
-debug: 	all
-
-translate: glf
+		lex lexica.l
+		yacc -d sintatica.y
+		g++ -o glf y.tab.c -ll -w
 		./glf < exemplo.pandora
 
-clean:
-	rm y.tab.c
-	rm y.tab.h
-	rm lex.yy.c
-	rm glf
+commit:
+		git init
+		git add .
+		git commit -m "final commit"
+		git branch -M Entrega_Final
+		git push -u origin Entrega_Final
