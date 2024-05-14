@@ -7,12 +7,12 @@ O projeto está sendo desenvolvido e será feito em 3 entregas. No momento somen
 
 ### Entrega 1:
 
--Expressão
--Tipos: Boolean, Int, Float, Char, 
--Conversão: Implícita, Explícita.
--Operadores: Lógico, Aritmético, Relacional
--Variável
--Atribuição
+- Expressão
+- Tipos: Boolean, Int, Float, Char, 
+- Conversão: Implícita, Explícita.
+- Operadores: Lógico, Aritmético, Relacional
+- Variável
+- Atribuição
 
 ## Instalação
 
